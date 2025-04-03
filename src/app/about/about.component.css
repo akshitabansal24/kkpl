@@ -1,0 +1,37 @@
+/*--------Section-3-About-us--------------*/
+.about-us
+{
+	background-image: url('../../assets/img/abt-img.png');
+	padding-top:100px;
+	position:relative;
+	background-size: cover;
+	height:100vh;
+	width:100vw;
+}
+/* .abt-img{
+	height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    left: 0;
+    position: absolute;
+} */
+.about-us h1 {
+	/* font-size: 58px; */
+	text-align: center;
+}
+.about-us h4 {
+	text-align: center;
+	/* font-size: 20px; */
+	color: #47403d;
+	padding-top: 60px;
+	word-wrap: break-word;
+    overflow-wrap: break-word;
+    /* padding-left: 140px;
+    padding-right: 140px; */
+}
+.exo-2 {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }

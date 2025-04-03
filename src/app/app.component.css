@@ -1,0 +1,85 @@
+.navbar-brand {
+    font-weight: bold;
+}
+.content-section {
+    padding: 20px 0;
+}
+.footer {
+    background: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.navbar {
+    position: absolute;
+    margin: 20px ;
+    border-radius: 30px;
+}
+
+.hero-img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(0.6);
+    top: 0;
+    position: relative;
+}
+
+@keyframes appear {
+    from {
+      opacity: 0;
+      clip-path: inset(100% 100% 0 0);
+    }
+    to {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  .block {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+
+  
+.exo-2 {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .italianno-regular {
+    font-family: "Italianno", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-optical-sizing: auto;
+    /* animation: linear duration timing-function delay iteration-count direction fill-mode; */
+  }
+
+.card-img-overlay{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-text {
+  /* text-align: center; */
+  background: linear-gradient(60deg, white, #00c2ff, #33ff8c, white, #ffc640, #ff8940, white, #33ffd3, #e54cff, white, #0044ff);
+  /* text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9); */
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  letter-spacing: 0.4rem;
+  animation: rainbow 8s linear infinite;
+  /* text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); */
+}
