@@ -1,0 +1,72 @@
+.contact i {
+    font-size: 2rem;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .contact h5,
+  .contact p {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Optional: style links inside .contact */
+  .contact a:link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  
+  .exo-2 {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .contact-info-box {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center; /* Vertically center content */
+    gap: 16px;
+    min-height: 140px;
+  }
+  
+  .contact-info-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .contact-info-box i {
+    min-width: 40px;
+    font-size: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-info-box {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .contact-info-box i {
+      margin-bottom: 10px;
+    }
+  }
+  
+
+  .exo-2 {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }

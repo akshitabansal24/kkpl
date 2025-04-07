@@ -1,0 +1,63 @@
+.navbar {
+    width: 75%;
+    position: fixed;
+    margin: 20px;
+    border-radius: 60px;
+    z-index: 1000;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Ensure toggler button is dark */
+.navbar-toggler {
+    /* background-color: rgba(0, 0, 0, 0.8); Dark background */
+    filter: invert(0) brightness(0.7); /* Makes it darker */
+    border: 2px solid rgba(255, 255, 255, 0.921); /* White border for visibility */
+    padding: 5px 10px;
+    border-radius: 60px;
+}
+
+/* Default: Transparent navbar */
+.navbar:not(.navbar-scrolled) {
+    background: transparent;
+}
+
+.navbar-scrolled {
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.886);
+    margin: 20px;
+    border-radius: 60px;
+    box-shadow: 0 3px 10px rgba(39, 77, 118, 0.4);
+}
+
+.navbar .nav-link {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.888) !important;
+    /* Default white text for transparent navbar */
+}
+
+.navbar .nav-link:hover {
+    font-weight: bold;
+    color: #333 !important;
+    text-decoration: underline;
+    transition: all 0.2s;
+}
+
+.navbar-scrolled .nav-link {
+    color: #343a40 !important;
+    /* Darker text for solid navbar */
+}
+
+.navbar-scrolled .nav-link:hover {
+    font-weight: bold;
+    color: #333 !important;
+    text-decoration: underline;
+    transition: all 0.2s;
+}
+
+.exo-2 {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }

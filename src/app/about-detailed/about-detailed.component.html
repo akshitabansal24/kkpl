@@ -1,0 +1,67 @@
+<!-- <app-navbar></app-navbar> -->
+<section id="about-detailed" class="exo-2">
+    <div class="page-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <span class="breadcrumb"><a routerLink="/home">Home</a> / About Us</span>
+                    <h3 class="mt-4">ABOUT US</h3>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="section details pt-5">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <ul class="details-filter block">
+                <li>
+                    <a class="filter-btn is_active"  (click)="filterDiv('profile')">Company Profile</a>
+                </li>
+                <li>
+                    <a class="filter-btn"  (click)="filterDiv('certifications')">Certifications</a>
+                </li>
+            </ul>
+    
+            <!-- details Box -->
+            <div class="row details-box">
+                <div class="details-items profile" [class.show]="selectedFilter === 'profile'">
+                    <div class="item">
+                        <!-- <span class="category">COMPANY PROFILE</span> -->
+                        <h6>
+                            <strong>Mr.Kashmiri Lal Khanna</strong> established the Company in 1975, with the aim to manufacture & export Textile Fabrics. 
+                            Prior to that all operations were in the export of Tea to Afghanistan & Morrocco under the name of Kashmiri 
+                            Lal Kasturi Lal & Co., which had been in business since the 1940’s. When the present Company was incorporated, 
+                            the two businesses were amalgamated. The Company is entirely family owned. In 2006, the company was certified as 
+                            an <strong>ISO 9001:2000 company</strong>.
+                            <br><br>
+                            The Company has emerged as a major exporter of Textile Products to countries like UK, Germany & Australia. 
+                            The Company specializes in Fire Resistant (FR) Treatments (Flame-Proofing) of Wool Serge for Stage/Theatrical 
+                            Drapes, in Durable (DFR) & Non-Durable (NDFR) finishes to all International Standards and our buyer’s 
+                            specifications of GSM, etc.
+                            <br><br>
+                            <strong></strong>Jacquard Fabrics for Upholsteries are also available with the above option and Water or Soil Repellency Treatments.
+                            <br><br>
+                            <strong>Handloom Tweeds & Blazer fabrics</strong> are custom made entirely to our clients requirements.
+                            <br><br>
+                            It’s products like <strong>Pure Pashmina Shawls, Stoles and Scarves</strong> have been well accepted in the International Market. 
+                            The company works on buyer's requirements/specifications for colours, sizes, printing and embroideries for all orders.
+                            <br><br>
+                            The company is a member of Wool & Woollens Export Promotion Council of India, a Govt. of India organization.
+                            <br><br>
+                            The success can be attributed to the mission of the company that aims towards <strong>customer satisfaction</strong>.
+                        </h6>
+                    </div>
+                </div>
+    
+                <div class="details-items certifications" [class.show]="selectedFilter === 'certifications'">
+                    <div class="item">
+                        <h6><a href="../../assets/img/ISO.jpg" target="_blank">ISO 9001:2000 Certificate</a></h6>
+                        <br>
+                        <h6><a href="../../assets/img/dfr.pdf" target="_blank">DFR Test Standard BS 5867</a></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
