@@ -1,1 +1,539 @@
-<p>stoles works!</p>
+<!-- <app-navbar></app-navbar> -->
+<section id="stoles" class="exo-2">
+    <div class="page-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <span class="breadcrumb">
+                        <a routerLink="/home">Home</a> / 
+                        <a routerLink="/products">Our Products</a> / Shawls / Stoles</span>
+                    <h3 class="mt-4">SHAWLS / STOLES</h3>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="section details pt-5">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <ul class="details-filter block">
+                <li>
+                    <a class="filter-btn is_active"  (click)="filterDiv('pashminas')">Pashminas</a>
+                </li>
+                <li>
+                    <a class="filter-btn"  (click)="filterDiv('making')">Making Process</a>
+                </li>
+                <li>
+                    <a class="filter-btn"  (click)="filterDiv('wool')">Wool Blend</a>
+                </li>
+                <li>
+                    <a class="filter-btn"  (click)="filterDiv('silk')">Silk Blend</a>
+                </li>
+                <li>
+                    <a class="filter-btn"  (click)="filterDiv('designs')">Designs</a>
+                </li>
+                <li>
+                    <a class="filter-btn"  (click)="filterDiv('care')">Shawl Care</a>
+                </li>
+            </ul>
+    
+            <!-- details Box -->
+            <div class="row details-box">
+                <div class="details-items pashminas" [class.show]="selectedFilter === 'pashminas'">
+                    <div class="item">
+                        <h6>
+                            <strong>Pashmina</strong> is a type of wool that is obtained from a special breed of goat endemic to high 
+                            altitudes of the <strong>Himalayan Range</strong> Belt of Asia. The special <strong>goat's fleece</strong> has been used for 
+                            thousands of years to make high-quality shawls that also bear the same name.
+                            <br><br>
+                            <strong>Capra Hircus</strong> goat which is the source of Pashmina lives at elevations of 14,500 feet 
+                            (4,500 meters) and above, where temperatures is harsh to an extent of minus 30 degrees 
+                            C in winters. The diameter of a Pashmina fiber is very minute (about five times smaller 
+                            than a human hair). Each goat produces only about 90 grams of Pashmina wool each year. 
+                            One woven Pashmina shawl requires the wool from three goats.
+                            <br><br>
+                            During Molting Season (Spring), the goats shed away this inner wool which they develop 
+                            all over again during the course of the winter. The inner wool is collected, sheared and 
+                            spun to produce Pashmina. The process is natural and the Goat is not harmed in any way. 
+                            Its something similar to a pet dog who sheds its coat once or twice an year and then get 
+                            a new set of coat. <strong>THE GOATS ARE NOT HARMED IN ANY WAY WHATSOEVER</strong>.
+                            <br><br>
+                            Pashmina accessories are available in a range of sizes, from <strong>"Scarf"</strong> (12" x 60" or 30cm X 150cm)
+                            to <strong>"Wrap"</strong> or <strong>"stole"</strong> (28" x 80" or 70cm X 200cm) to full-size <strong>Shawl</strong>
+                            (40" x 80" or 100cm  X 200cm). Pure Pashmina is a rather gauzy, open weave, as the wool cannot tolerate high 
+                            tension. The shawl is hand-made thus can be made in custom designs and sizes as per the buyer requirements.
+                            <br><br>
+                            When Pashmina shawls rose into fashion prominence during the mid 90’s, it was marketed dubiously.
+                            In the consuming markets, Pashmina shawls were again defined as a shawl/wrap with <strong>cashmere and silk</strong>, 
+                            not withstanding the actual meaning of Pashmina - which is technically an accessory of pure 
+                            Pashmina and not the blend.
+                            <br><br>
+                            The most dubious form of marketing of <strong>"Pashmina"</strong> is the use of the man-made fabric viscose. 
+                            This is certainly not a true Pashmina and will be nowhere near as warm or luxurious as the real thing. 
+                            Some unscrupulous companies will go so far as using deceptive marketing statements as <strong>"authentic 
+                            viscose Pashmina"</strong> These are often sold for US$20 or less, so you may have to be the judge if it 
+                            is authenticity, quality, or price that motivates your purchase. 
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="details-items making" [class.show]="selectedFilter === 'making'">
+                    <div class="item">
+                        <h6>
+                            <strong>Spinning</strong><br>
+                            The Pashmina wool is collected every spring, and spinning is done by hand. The yarn 
+                            is spun on a spinning wheel locally known as ‘Charkha’. Prior to spinning, the raw 
+                            material is treated by stretching and cleaning it to remove any dirt and soaked for 
+                            a few days in a mixture of rice and water to make it softer. Hand-spinning is an extremely 
+                            painstaking and a lengthy task. It requires extreme patience and dedication, and is an amazing process to watch.
+                            <br><br>
+                            <strong>Weaving</strong><br>
+                            Pashmina yarn is too fragile for the vibration caused by power looms thus the weaving of the 
+                            traditional 100% Pashmina shawls are therefore done on Hand Looms. It is essential for the 
+                            weaver to have a uniform hand, for par excellence fabric. Weaving is done with a shuttle. 
+                            The weaving process is in itself an art, which has been passed over from generations to generations. 
+                            It takes about 4 days to weave a single Pashmina shawl on a handloom.
+                            <br><br>
+                            <strong>Dyeing</strong><br>
+                            Dyeing is also done by hand, and each piece individually. Dyers with immense patience and 
+                            generations of experience are the ones who dye the Pashmina shawls, as even the smallest 
+                            negligence reflects on the quality of the product. Only metal and azo-free dyes are used, 
+                            making the shawls completely eco-friendly. The pure water used for dying is pumped up from 
+                            deep beneath the surface. Dyeing is done at a temperature just below boiling point for nearly an hour. 
+                            Pashmina wool is exceptionally absorbent, and dyes easily and deeply.
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="details-items wool" [class.show]="selectedFilter === 'wool'">
+                    <div class="item">
+                        <h6>
+                            We bring to you our wide range of <strong>Shawls, Stoles, Scarves and Wraps</strong> in Pure Wool. 
+                            With large variety of designs in different types of wool, we have something for 
+                            everyone. Every product we manufacture is made in a traditional way using <strong>high-quality 
+                            wool and thread</strong>. The blend of traditional and modern methods, which we apply in manufacturing, 
+                            gives you the high-quality and unique products at an affordable price.
+                            <br><br>
+                            We use different types of Wool to manufacture our shawls and stoles. The quality of 
+                            wool is determined by the factors like <strong>fiber fineness, length, scale structure, color, 
+                            cleanliness, and freedom from damage</strong>. Raw Wool is generally in a creamy white colour, 
+                            although some breeds of sheep produce natural colors such as black, brown and grey.
+                            <br><br>
+                            Our pure wool shawl <strong>collection</strong> includes beautiful checks, stripes & dobby designs, 
+                            Antique Jamawar designs, Printed & Painted designs, Machine & Hand Embroidered designs 
+                            and of course the plain one's.
+                            <br><br>
+                            A wool shawl is a stylish way to keep warm and a must have fashion accessory for the women 
+                            of today! The <strong>Shawl / Stole</strong> can even be used as a wall hanging or an upholstery fabric.
+                            <br><br>
+                            <strong>The standard sizes available are:</strong>
+                            <br><br>
+                            <strong>40" X 80"</strong> (100 cm X 200 cm)<br>
+                            <strong>28" X 80"</strong> (70 cm X 200 cm)<br>
+                            <strong>12" X 60"</strong> (30 cm X 150 cm)<br>
+                            Any other size as per buyer's requirement<br>
+                            (in Bulk quantities only)<br>
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="details-items silk" [class.show]="selectedFilter === 'silk'">
+                    <div class="item">
+                        <h6>
+                            <strong>‘Silk’</strong> the very name emanates richness. And true to its name it brings 
+                            richness to the ensemble, as a whole. Silk shawls make any outfit look more 
+                            appealing. No doubt it was what the royals have been wearing it for ages.
+                            <br><br>
+                            To bring to its richness to you, we present our wide range of <strong>Shawls, Stoles, 
+                            Mufflers and Scarves</strong> in Pure Silk. Pamper yourself with our collection of Pure 
+                            Silk Shawls in Checks 'n' Stripes, Plain Colours, Shaded Colours, Printed and 
+                            Painted and above all the Royal collection of hand-embroidered one's.
+                            <br><br>
+                            Silk shawls, especially <strong>made in India</strong> using traditional techniques 
+                            have a growing market Worldwide. Firstly because of the rich silk that India 
+                            is famous for and secondly for the <strong>embroidery</strong> art that is appreciated world over 
+                            as it is very native to India.
+                            <br><br>
+                            These types of shawls are more like a style statement. They give your dress more 
+                            glory and keeps you outstanding. They are certainly not to protect you from the 
+                            chill weathers, however, it may assist you if it is a few degrees lower than the 
+                            normal temperature. Hence it is more sought after for style and fashion. Blended with 
+                            wool, the <strong>Silk-Wool blend</strong> adds to the style providing the necessary property of keeping you warm.
+                            <br><br>
+                            <strong>The standard sizes available are:</strong>
+                            <br><br>
+                            <strong>40" X 80"</strong> (100 cm X 200 cm)<br>
+                            <strong>28" X 80"</strong> (70 cm X 200 cm)<br>
+                            <strong>12" X 60"</strong> (30 cm X 150 cm)<br>
+                            Any other size as per buyer's requirement<br>
+                            (in Bulk quantities only)<br>
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="details-items designs" [class.show]="selectedFilter === 'designs'">
+                    <div class="item">
+                        <div class="pashminas"><h6 class="mb-4"><strong>Handloom Pashminas</strong></h6>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/7as.jpg" class="card-img-top rounded-3" alt="Product 1">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/7bs.jpg" class="card-img-top rounded-3" alt="Product 2">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/7cs.jpg" class="card-img-top rounded-3" alt="Product 3">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/7ds.jpg" class="card-img-top rounded-3" alt="Product 4">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="pure-wool"><h6 class="mb-4"><strong>Pure Wool</strong></h6>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/3as.jpg" class="card-img-top rounded-3" alt="Product 1">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/3bs.jpg" class="card-img-top rounded-3" alt="Product 2">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/3cs.jpg" class="card-img-top rounded-3" alt="Product 3">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/3ds.jpg" class="card-img-top rounded-3" alt="Product 4">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="pure-silk"><h6 class="mb-4"><strong>Pure Silk</strong></h6>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/silkemb1s.jpg" class="card-img-top rounded-3" alt="Product 1">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/silkemb2s.jpg" class="card-img-top rounded-3" alt="Product 2">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/silkemb3s.jpg" class="card-img-top rounded-3" alt="Product 3">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/silkemb4s.jpg" class="card-img-top rounded-3" alt="Product 4">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="viscose"><h6 class="mb-4"><strong>Viscose</strong></h6>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/v1s.jpg" class="card-img-top rounded-3" alt="Product 1">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/v2s.jpg" class="card-img-top rounded-3" alt="Product 2">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/v3s.jpg" class="card-img-top rounded-3" alt="Product 3">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/v4s.jpg" class="card-img-top rounded-3" alt="Product 4">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/1as.jpg" class="card-img-top rounded-3" alt="Product 5">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/1bs.jpg" class="card-img-top rounded-3" alt="Product 6">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/1cs.jpg" class="card-img-top rounded-3" alt="Product 7">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/1ds.jpg" class="card-img-top rounded-3" alt="Product 8">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="digital-silk"><h6 class="mb-4"><strong>Digital Prints on Silk</strong></h6>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/dps-s1.jpg" class="card-img-top rounded-3" alt="Product 1">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/dps-s2.jpg" class="card-img-top rounded-3" alt="Product 2">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/dps-s3.jpg" class="card-img-top rounded-3" alt="Product 3">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/dps-s4.jpg" class="card-img-top rounded-3" alt="Product 4">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/dps-s5.jpg" class="card-img-top rounded-3" alt="Product 5">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/dps-s6.jpg" class="card-img-top rounded-3" alt="Product 6">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/dps-s7.jpg" class="card-img-top rounded-3" alt="Product 7">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/dps-s8.jpg" class="card-img-top rounded-3" alt="Product 8">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/dps-s9.jpg" class="card-img-top rounded-3" alt="Product 9">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/dps-s10.jpg" class="card-img-top rounded-3" alt="Product 10">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="jaquards-wool"><h6 class="mb-4"><strong>Jaquards in Wool</strong></h6>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/jwd-s1.jpg" class="card-img-top rounded-3" alt="Product 1">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/jwd-s2.jpg" class="card-img-top rounded-3" alt="Product 2">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/jwd-s3.jpg" class="card-img-top rounded-3" alt="Product 3">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/jwd-s4.jpg" class="card-img-top rounded-3" alt="Product 4">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/jwd-s5.jpg" class="card-img-top rounded-3" alt="Product 5">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/jwd-s6.jpg" class="card-img-top rounded-3" alt="Product 6">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/jwd-s7.jpg" class="card-img-top rounded-3" alt="Product 7">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/jwd-s8.jpg" class="card-img-top rounded-3" alt="Product 8">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/jwd-s9.jpg" class="card-img-top rounded-3" alt="Product 9">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/jwd-s10.jpg" class="card-img-top rounded-3" alt="Product 10">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/jwd-s11.jpg" class="card-img-top rounded-3" alt="Product 11">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/jwd-s12.jpg" class="card-img-top rounded-3" alt="Product 12">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/jwd-s13.jpg" class="card-img-top rounded-3" alt="Product 13">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/jwd-s14.jpg" class="card-img-top rounded-3" alt="Product 14">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/jwd-s15.jpg" class="card-img-top rounded-3" alt="Product 15">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/jwd-s16.jpg" class="card-img-top rounded-3" alt="Product 16">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/jwd-s17.jpg" class="card-img-top rounded-3" alt="Product 17">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/jwd-s18.jpg" class="card-img-top rounded-3" alt="Product 18">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/jwd-s19.jpg" class="card-img-top rounded-3" alt="Product 19">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/jwd-s20.jpg" class="card-img-top rounded-3" alt="Product 20">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="digital-print"><h6 class="mb-4"><strong>Digital Prints</strong></h6>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/prints-s1.jpg" class="card-img-top rounded-3" alt="Product 1">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/prints-s2.jpg" class="card-img-top rounded-3" alt="Product 2">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/prints-s3.jpg" class="card-img-top rounded-3" alt="Product 3">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/prints-s4.jpg" class="card-img-top rounded-3" alt="Product 4">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/prints-s5.jpg" class="card-img-top rounded-3" alt="Product 5">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/prints-s6.jpg" class="card-img-top rounded-3" alt="Product 6">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/prints-s7.jpg" class="card-img-top rounded-3" alt="Product 7">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/prints-s8.jpg" class="card-img-top rounded-3" alt="Product 8">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prints-wool"><h6 class="mb-4"><strong>Prints on Wool</strong></h6>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/prints-on-wools-s1.jpg" class="card-img-top rounded-3" alt="Product 1">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-2 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/shawl designs/prints-on-wools-s2.jpg" class="card-img-top rounded-3" alt="Product 2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-items care" [class.show]="selectedFilter === 'care'">
+                    <div class="item">
+                        <h6>
+                            <strong>For Pure Wool Shawls<br></strong>
+                            Plain / Jamawar wool shawls can be hand-washed in cold water with a mild detergent. 
+                            Embroidered Shawls should only be dry-cleaned. Pure wool shawls should either be steam 
+                            ironed or lightly ironed under a pressing cloth. Keep it folded in a paper bag when not in use.
+                            <br><br>
+                            <strong>For Silk Shawls<br></strong>
+                            Plain and Embroidered Silk shawls should be dry-cleaned. Silk shawls should either 
+                            be steam ironed or lightly ironed under a pressing cloth. Keep it folded in a paper bag when not in use.
+                            <br><br>
+                            <strong>For Handloom Pashmina<br></strong>
+                            Pashmina shawls can be delicately hand washed in cold water with a light detergent. 
+                            The shawls should then be rolled in a towel to remove water and laid flat to dry in shade. 
+                            DO NOT iron the shawl while it is wet. Let it dry before you Steam-Iron. Keep it folded in 
+                            a paper bag when not in use.
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

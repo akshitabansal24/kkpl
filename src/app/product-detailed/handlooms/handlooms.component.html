@@ -1,1 +1,111 @@
-<p>handlooms works!</p>
+<!-- <app-navbar></app-navbar> -->
+<section id="handlooms" class="exo-2">
+    <div class="page-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <span class="breadcrumb">
+                        <a routerLink="/home">Home</a> / 
+                        <a routerLink="/products">Our Products</a> / Handloom Tweeds</span>
+                    <h3 class="mt-4">HANDLOOM TWEEDS</h3>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="section details pt-5">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <ul class="details-filter block">
+                <li>
+                    <a class="filter-btn is_active"  (click)="filterDiv('handlooms')">Handlooms</a>
+                </li>
+                <li>
+                    <a class="filter-btn"  (click)="filterDiv('designs')">Designs</a>
+                </li>
+            </ul>
+    
+            <!-- details Box -->
+            <div class="row details-box">
+                <div class="details-items handlooms" [class.show]="selectedFilter === 'handlooms'">
+                    <div class="item">
+                        <h6>
+                            <strong>Tweed</strong> is worsted yarn fabric woven on a handloom thus also called <strong>'Handloom Tweed'</strong>. 
+                            It is a traditionally woven and a heavy woollen outerwear fabric. Though it has now 
+                            been replaced by modern fabrics, it is still a beautiful, comfortable and highly coveted material.
+                            <br><br>
+                            The Handloom Tweed is made in either plain or twill weave and may have a check, 
+                            twill or some pattern. <strong>Interesting color effects</strong> are obtained by twisting together 
+                            differently colored woolen strands into a two or three-ply yarn.
+                            <br><br>
+                            Tweed fabric is thicker and heavier than <strong>shawl</strong> and the colors used are fast and bright. 
+                            Better-quality worsted yarn is used for weaving tweed. It is woven on the handloom and 
+                            comes in different widths, having an apt length. In order to prevent it from further 
+                            shrinkage it is heavily milled after weaving. Originally it was woven in <strong>natural wool</strong>
+                            colours of black, white and grey but now they are wide variety of colors and patterns 
+                            available in Handloom Tweeds.
+                            <br><br>
+                            Tweeds are desirable for outerwear, being <strong>moisture-resistant and very durable</strong>. 
+                            The warm property of this fabric makes it ideal for making coats, over coats, 
+                            jackets, women coats and similar products. 
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="details-items designs" [class.show]="selectedFilter === 'designs'">
+                    <div class="item">
+                        <h6>
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/tweed1.jpg" class="card-img-top rounded-3" alt="Product 1">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/tweed2.jpg" class="card-img-top rounded-3" alt="Product 2">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/tweed3.jpg" class="card-img-top rounded-3" alt="Product 3">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/tweed4.jpg" class="card-img-top rounded-3" alt="Product 4">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/tweed5.jpg" class="card-img-top rounded-3" alt="Product 5">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/tweed6.jpg" class="card-img-top rounded-3" alt="Product 6">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/tweed7.jpg" class="card-img-top rounded-3" alt="Product 7">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 mb-5">
+                                    <div class="card">
+                                        <img src="../../../assets/img/tweed8.jpg" class="card-img-top rounded-3" alt="Product 8">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 mb-5">
+                                    <div class="card h-100">
+                                        <img src="../../../assets/img/tweed9.jpg" class="card-img-top rounded-3" alt="Product 9">
+                                    </div>
+                                </div>
+                            </div>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

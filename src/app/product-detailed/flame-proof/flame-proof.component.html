@@ -1,1 +1,391 @@
-<p>flame-proof works!</p>
+<!-- <app-navbar></app-navbar> -->
+<section id="flame-proof-fabrics" class="exo-2">
+  <div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <span class="breadcrumb">
+            <a routerLink="/home">Home</a> /
+            <a routerLink="/products">Our Products</a> / Flame Proof Fabrics</span>
+          <h3 class="mt-4">FLAME PROOF FABRICS</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section details pt-5">
+    <div class="container">
+      <!-- Filter Buttons -->
+      <ul class="details-filter block">
+        <li>
+          <a class="filter-btn is_active" (click)="filterDiv('flame-proof-fabrics')">Flame Proof Fabrics</a>
+        </li>
+        <li>
+          <a class="filter-btn" (click)="filterDiv('types-fr')">Types of FR Fabrics</a>
+        </li>
+        <li>
+          <a class="filter-btn" (click)="filterDiv('applications')">Applications</a>
+        </li>
+        <li>
+          <a class="filter-btn" (click)="filterDiv('making-wool-serge')">Making Process</a>
+        </li>
+      </ul>
+
+      <!-- details Box -->
+      <div class="row details-box">
+        <div class="details-items flame-proof-fabrics" [class.show]="selectedFilter === 'flame-proof-fabrics'">
+          <div class="item">
+            <!-- <span class="category">COMPANY PROFILE</span> -->
+            <h6>
+              <strong>Fire Resistant or Fire-Retardant fabrics</strong> are those fabrics that have been specially
+              treated to pass certain FR Standards. These fabrics are treated in a composite solution admixed with
+              different fire retardant chemicals to make them resistant to fire flames.
+              <br><br>
+              Flame Proofed fabrics are suitable for residential and commercial use, wherever fireproofing or
+              insulation is desirable. The process of flameproofing is done keeping in view the different standards
+              laid by different authorities. The common standards being BS-5867, BS-5852, B1-German, M1-French,
+              BS EN 469 and BS EN 531 (Flameproof industrial clothing).
+            </h6>
+          </div>
+        </div>
+
+        <div class="details-items types-fr" [class.show]="selectedFilter === 'types-fr'">
+          <div class="item">
+            <ul class="sub-filter mb-4">
+              <li>
+                <a class="sub-filter-btn is_active" (click)="selectSubFilter('cotton')">Cotton</a>
+              </li>
+              <li>
+                <a class="sub-filter-btn" (click)="selectSubFilter('wool')">Wool</a>
+              </li>
+              <li>
+                <a class="sub-filter-btn" (click)="selectSubFilter('polyester')">Polyester</a>
+              </li>
+            </ul>
+            <div class="row g-4 justify-content-center">
+              <div class="sub-items" [class.show2]="selectedSubFilter === 'cotton'">
+                <h6>
+                  <strong>Cotton</strong> is the most commonly used fabric today that is being used for different
+                  applications. Simple use and easy to care makes this fabric widely used natural fiber for various purposes
+                  including decorating, homewares, army uniforms, industrial purposes and other clothing. As
+                  different varieties such as cotton crepe, cotton nets, cotton sateen, cotton tussar, lycra
+                  cotton sateen, glace cotton, brushed cotton and etc are available hence choosing the best fabric
+                  for a sewing project and specific requirement can be tough. To help you buy the superior variety
+                  as per the need, we are here with our premium products produced by our experienced cotton fabrics
+                  manufacturers with international quality standards and norms.
+                  <br><br>
+                  Kashmiri Lal Tarun Khanna P. Ltd. is the recognized <strong>cotton fabrics exporters</strong>
+                  supplying the
+                  variety of fabrics not only in India but across the world. Offering a wide range of cotton
+                  fabrics in both national and international market, we have established the good position in
+                  the market developing the large database of satisfactory customers. Our pure cotton fabrics
+                  available in exclusive designs have the highly appreciating features that make it unique in itself.
+                  <br><br>
+                  Our buyers get the <strong>100% quality assurance</strong> in all sorts of cotton products. Available
+                  immediately
+                  at competitive pricing without any delay exactly according to the buyer’s precise order
+                  specifications,
+                  our products are considered at the top position in the list of quality cotton fabrics.
+                  <br><br>
+                  <strong>Major Characteristics</strong> of Our Highly Approved Cotton Fabrics<br>
+                  <li>High absorption<br></li>
+                  <li>Long-term durability<br></li>
+                  <li>Tough and strong<br></li>
+                  <li>Always retains its shape<br></li>
+                  <li>Easy to dye<br></li>
+                  <li>Soft, breathable and absorbent<br></li>
+                  <li>Easily washable and maintenance<br></li>
+                  <li>Stink resistance<br></li>
+                  <li>High versatility<br></li>
+                  <li>Natural and non-allergenic fiber<br></li>
+                  <li>Good color retention<br></li>
+                  <li>Low elasticity<br></li>
+                  <li>Easy sewing and handling<br></li>
+                  <li>Awesome drape-ability<br></li>
+                  <br>
+                  <strong>Cotton fabrics manufacturers</strong> at KKPL produce such fiber that can be knitted or woven
+                  easily into other fabrics such as chambray, flannel, velvet, jersey, corduroy and many more.
+                  Used with flame retardant fabrics, our cotton products are widely used for taking protection from
+                  fire.
+                  <br><br>
+                  We supply all types of FR Fabrics in Cotton with different finishes like NDFR, DFR, IFR and Not FR.
+                  Following options are available in cotton:<br>
+                  <li>Overall Fabrics (200 / 300 / 350 GSM)<br></li>
+                  <li>Heavy Cotton Glove Fabric (350 GSM)<br></li>
+                  <li>Heavy Cotton for Tents and Marquees<br></li>
+                  <li>Cotton Sheeting (150 / 200 GSM)<br></li>
+                  <li>Cotton Casements (80 / 100 GSM)<br></li>
+                  <li>Black Cotton - Opaque (can be used to block out an area)<br></li>
+                  <li>Cotton Canvas - Ideal for companies catering to Summer Camp Organisers<br></li>
+                  <br>
+                  The overall fabric can be used for people in the Oil Rigging industry, Engineering & Maintenance
+                  Industrty and Defence. The overall fabric can be OR (Oil Resistant) & WR (Water Resistant).
+                  <br>
+                </h6>
+              </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+              <div class="sub-items py-4" [class.show2]="selectedSubFilter === 'wool'">
+                <h6>
+                  Kashmiri Lal Tarun Khanna P. Ltd. the leading <strong>wool serge</strong> fabric suppliers are widely
+                  appreciated for providing
+                  the premium quality of serge. Our products have been gaining the huge popularity all over the world
+                  because of
+                  exclusive varieties and superiority. We offer a broad range of woolen fabrics in appealing designs
+                  that are
+                  available in stock of colors. Smooth texture, finest quality, high tearing strength and other great
+                  characteristics
+                  have made our products the preferred choice globally.
+                  <br><br>
+                  Backed by the successful team of our <strong>wool serge</strong> fabric manufacturers who have over
+                  years of experience, we are able
+                  to meet the customary requirements of all clients. The manufacturer’s team produced the serge with the
+                  specified
+                  industrial norms and quality standards to ensure the complete satisfaction of customers. All of the
+                  products are
+                  tested on several parameters to make certain the high strength and durability.
+                  <br><br>
+                  Wool serge is the twill fabric comprising of ridges or diagonal lines on both sides. This is one of
+                  the highly
+                  demanding fabrics for borders, theatrical drapes, skirting, and legs. Made with two-down and two-up
+                  weave, wool
+                  serge is used in making trench coats, military uniforms, great coats, suits and many others.
+                  <br><br>
+                  Our <strong>wool fabrics</strong> manufacturers with prolonged experience produced the highly
+                  efficient products using the superior
+                  quality material to ensure longer durability. We consider the individual requirement of each customer
+                  and offer the
+                  excellent selection according to buyer’s order specifications and needs. Our wool fabrics offer the
+                  ultimate versatility,
+                  warmth, satisfaction and comfort just at an affordable price.
+                  <br><br>
+                  <strong>Black wool serge</strong> manufacturers produced the special variety of inherently
+                  flame-proofed wool serge exists in a
+                  variety of colors and many great features. Specifically designed for the commercial and domestic use
+                  with an
+                  industry standard for perimeter treatment, this variety of certified serge provides excellent sound
+                  absorption
+                  and acoustic properties. Black wool serge is in great demand today for producing the curtains for
+                  television and
+                  photographic studio use.
+                  <br><br>
+                  Our Theatrical Wool Fabrics are used in making acoustic sound control systems, stage drapes, stage and
+                  theatre
+                  curtains and other curtains. As we are the leading wool fabrics manufacturers, we can provide the most
+                  cost-effective
+                  and quality products. Our wide range of theatre fabrics brings life into your production. If you are
+                  not sure about
+                  the best quality of fabric according to your requirements then discuss with our friendly and skilled
+                  manufacturers.
+                  <br><br>
+                  No matter what variety of wool fabric or serge you are purchasing, all of our products are available
+                  with elevated
+                  durability, fine finishing, quality assurance and great characteristics at competitive rates.
+                  <br><br>
+                  We supply all types of FR Fabrics in Wool with different finishes like NDFR, DFR, IFR and Not FR.
+                  Following
+                  options are available in wool:<br>
+                  <li>Flame Proofed Blankets (500 / 600 / 700 GSM)<br></li>
+                  <li>Wool Serge (for Theatrical Drapes)<br></li>
+                  <li>Overall Fabrics<br></li>
+                  <li>FR Blankets (For Firemen)<br>
+                  <li>Super Wool Serge - 500/525grm/M2 (60" 150cm)<br></li>
+                  <li>Heavy Wool Serge - 625grm/M2 60" (60" 150cm)<br></li>
+                  <li>Coloured Wool Serge - 400/420grm/M2 (60" 150cm)<br></li>
+                  <li>Chromakey Wool Serge - 400/500grm/M2 (60" 150cm)<br></li>
+                </h6>
+              </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+              <div class="sub-items py-5" [class.show2]="selectedSubFilter === 'polyester'">
+                <h6>
+                  <strong>Polyester</strong> is commonly referred as long chain polymers and polyethylene terephthalate (PET) that
+                  comprises of naturally occurring chemicals such as synthetics and the cutin of plant cuticles. Developed in 20th
+                  century laboratory, this fabric composed of a dihydric alcohol, terephthalic acid and at least 85% of an ester
+                  by weight. In simpler terms, it means the blend of various esters within the fibers. The chemical reaction
+                  between a carboxylic acid and alcohol results in the formation of polyester fibers.
+                  <br><br>
+                  Polyester also refers to another category of polymers in which spine is formed by esterification
+                  condensation
+                  of acids and polyfunctional alcohols. Basically, polyester is classified into two main categories-
+                  saturated
+                  and unsaturated. Saturated polyesters refer to that polyester which has saturated backbone. In the
+                  reaction of
+                  this family of polyesters, the usual reactants are an acid or anhydride and glycol. While unsaturated
+                  polyesters
+                  widely used in reinforced plastics have the backbone comprising of alkyl thermosetting resins
+                  distinguish by vinyl unsaturation.
+                  <br><br>
+                  <strong>Uses of Polyester Fiber<br></strong>
+                  Polyester is the most commonly used fiber in the manufacturing of a variety of products such as home
+                  furnishings, recording tapes, clothing, industrial fabrics, liquid crystal displays, film insulation of wires,
+                  holograms, outerwear, filling pillows and etc. Polyester clothes are gaining the popularity from many centuries
+                  because of its property of not absorbing the moisture. PET bottles are one of the biggest applications of
+                  polyester fiber these days.
+                  <br><br>
+                  Kashmiri Lal Tarun Khanna P. Ltd. India’s number one <strong>Polyester Fabric Exporters</strong> supplies all types of
+                  FR Fabrics in Polyester with different finishes such as NDFR, DFR, IFR and Not FR. Following options are
+                  available in polyester
+                  <br><br>
+                  <strong>Properties of Polyester<br></strong>
+                  <li>Easily dyeable and durable<br></li>
+                  <li>Resistant to shrinking<br></li>
+                  <li>Stretch resistant<br></li>
+                  <li>Light weight<br></li>
+                  <li>Extremely strong<br></li>
+                  <li>Easily washed and dried<br></li>
+                  <li>Polyester fabrics maintain its shape hence perfect for producing outdoor clothing for harsh climates<br></li>
+                  <li>Not damaged by mildew, abrasion resistant, and sun resistant<br></li>
+                  <li>Resistant to wrinkles and most of the chemicals</li>
+                  <br>
+                  We are involved in supplying a variety of polyester fabric with superior quality for a wide range of
+                  industrial applications. Today we have emerged out as Polyester Fabric Exporters whose all products comply with
+                  international quality standards.
+                  <br><br>
+                  We supply all types of FR Fabrics in Polyester with different finishes like NDFR, DFR, IFR and Not FR.
+                  Following options are available in polyester:<br>
+                  <li>Screening Fabric (225 GSM)<br></li>
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="details-items applications" [class.show]="selectedFilter === 'applications'">
+          <div class="item">
+            <h6>
+              The application of Flameproof or Fire Resistant fabrics is very wide and can be used in both indoor
+              and outdoor surroundings. Flameproof fabrics are commonly used in <strong>Tents, Oil Rigging Industry,
+                Exhibition
+                Centers, Museums, Corporate Buildings, Movie Halls, Stages, Night Clubs, Hotels</strong> and in every
+              public area.
+              The wide application of flameproof fabrics in these places is classified according to different standards.
+              These fabrics can be used as <strong>Curtains, Table Covers, Chair Covers, Upholstery, Backcloths, Tenting
+                and
+                virtually anywhere.</strong>
+              <br><br>
+
+              <div class="container my-4">
+                <div class="row justify-content-center g-4">
+                  <div class="col-sm-12 col-lg-2">
+                    <div class="card h-100 d-flex align-items-center justify-content-center">
+                      <img src="../../../assets/img/applications/overall.jpg" class="img-fluid p-1"
+                        style="max-height: 200px;" alt="Image 1">
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-2">
+                    <div class="card h-100 d-flex align-items-center justify-content-center">
+                      <img src="../../../assets/img/applications/glove.jpg" class="img-fluid p-1"
+                        style="max-height: 200px;" alt="Image 2">
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-2">
+                    <div class="card h-100 d-flex align-items-center justify-content-center">
+                      <img src="../../../assets/img/applications/marquee.jpg" class="img-fluid p-1"
+                        style="max-height: 200px;" alt="Image 3">
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-2">
+                    <div class="card h-100 d-flex align-items-center justify-content-center">
+                      <img src="../../../assets/img/applications/curtains.jpg" class="img-fluid p-1"
+                        style="max-height: 200px;" alt="Image 4">
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-2">
+                    <div class="card h-100 d-flex align-items-center justify-content-center">
+                      <img src="../../../assets/img/applications/tents.jpg" class="img-fluid p-1"
+                        style="max-height: 200px;" alt="Image 5">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </h6>
+          </div>
+        </div>
+
+        <div class="details-items making-wool-serge" [class.show]="selectedFilter === 'making-wool-serge'">
+          <div class="item">
+            <h6>
+              The long process of making Wool Serge Cloth starts by feeding the raw blended wool into the 'Carding
+              Machine'.
+              The process then moves ahead with Spinning of the thread, its Weaving, Washing, Flameproofing and dying.
+              Once
+              these processes are complete, the final fabric is tested, inspected, packed and shipped to the customer.
+              <br><br>
+              <strong>Carding:<br></strong>
+              The process of 'Carding' the wool is a time-consuming job. The raw wool fiber is entered into the 70 meter
+              long path in the carding machine. Then bundles of the matted blend are teased out slowly into straight
+              lines by various smart combing devices until a weak un-spun yarn called slubbing is made. Slubbing is then
+              rolled onto accepting drums called 'Bobbins' at the far end of the machine. The process goes on with
+              Spinning.
+              <br><br>
+              <strong>Spinning:<br></strong>
+              The 'Spinning' process starts by placing Bobbins of this delicate fiber on the spinning machine.
+              Many ends are tied to wooden spindles on the spinning carriage. The spinning carriage works back and
+              forward. The fiber is drawn from the bobbins each time the spinning carriage moves back. As the spinning
+              carriage moves forward, a mechanism turns the spindle, twisting the fibers into a strong spun yarn.
+              <br><br>
+              This process continues until the spindle cops are full. The full cops are then removed, and
+              an empty set takes their place. The yarn processed on the spindle cops has to be transferred to large
+              cones,
+              as the modern weaving technology requires much longer lengths than a spindle cop can provide. Once the
+              yarn
+              is transferred to the cones, they are taken to the weaving plant to weave the wool cloth.
+              <br><br>
+              <strong>Weaving:<br></strong>
+              The Wool Cloth is made on a weaving machine or a loom as we may call it. The weaving process
+              involves placing two sets of threads or yarn called the warp and weft of the loom and turning them
+              into cloth. The weft cones can be used directly on the loom. These threads run across the width of the
+              loom.
+              The warp threads must be in continuous length in accordance with the desired length of the piece to be
+              made
+              and so have to be transferred from the cones to a 'Beam'.
+              <br><br>
+              Before being placing on the beam, the yarn is transferred to a very large drum which is called 'Balloon'.
+              Each length of yarn is carefully wound onto the balloon, with great care being taken not to twist lengths
+              on
+              top of each other. From the balloon, the yarn, now in correct length, is transferred under equal tension
+              to
+              the 'Beam' which is then fitted to the loom to produce the warp.
+              <br><br>
+              Each thread from the beam is taken and tied through the loom on to a 'heald'. The row of healds determines
+              the start of the cloth. The weft thread, which comes straight from a cone, is attached to the shuttle
+              which
+              moves at a high speed across the width of the loom, traveling over and under each of the warp threads.
+              The healds rise & fall to allow the shuttle to weave its way across between them (weaving).
+              <br><br>
+              After each crossing of the shuttle, a comb squeezes the weft hard against the end of the warps and the
+              heals reverse position so the shuttle can return, continuing the process. The shuttle can make up to 300
+              passes each minute, so weaving 10cm of cloth every minute.
+              <br><br>
+              The raising/lowering sequence of warp threads gives rise to many possible weave structures from the
+              simplest plain weave to complex interlacing.
+              <br><br>
+              The woven cloth is then wounded on a roller that is placed at the back of the loom. The cloth roll is
+              removed
+              when full, then taken for 'finishing'.
+              <br><br>
+              <strong>Finishing:<br></strong>
+              The finishing process starts with a complicated chemical washing procedure which is controlled by a
+              computer. In the machine, the cloth is passed over rollers & between guides which have been set to reduce
+              the width and increase the thickness of the cloth as well as wash it. Cloth passes through this system in
+              continuous loops for a precise time.
+              <br><br>
+              After this, the cloth goes in for dying. The wool is dyed and durably flameproofed as to maintain its
+              flame-retardancy, even after dry-cleaning.
+              <br><br>
+              After dying, the wool cloth is passed through a drying machine under tension to ensure a regular width
+              and finish. The final step is testing and inspection.
+              <br><br>
+              <strong>Testing & Inspection:<br></strong>
+              A set of prescribed tests and inspections are carried on by experienced workers under the guidance
+              from supervisors. This is done to ensure that you get best quality fabric. Once these tests and
+              inspections
+              are successful, the cloth is packed in worthy packing and shipped to the customer.
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

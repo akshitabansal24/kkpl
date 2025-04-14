@@ -1,1 +1,153 @@
-<p>fabrics works!</p>
+<!-- <app-navbar></app-navbar> -->
+<section id="fabrics" class="exo-2">
+    <div class="page-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <span class="breadcrumb">
+                        <a routerLink="/home">Home</a> / 
+                        <a routerLink="/products">Our Products</a> / Fabrics</span>
+                    <h3 class="mt-4">FABRICS</h3>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="section details pt-5">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <ul class="details-filter block">
+                <li>
+                    <a class="filter-btn is_active"  (click)="filterDiv('printed-fabrics')">Printed Fabrics</a>
+                </li>
+                <li>
+                    <a class="filter-btn"  (click)="filterDiv('custom-wool')">Custom Wool Fabrics</a>
+                </li>
+                <li>
+                    <a class="filter-btn"  (click)="filterDiv('colour-chart')">Colour Chart</a>
+                </li>
+                <li>
+                    <a class="filter-btn"  (click)="filterDiv('metric-conversion')">Metric Conversion</a>
+                </li>
+            </ul>
+    
+            <!-- details Box -->
+            <div class="row details-box">
+                <div class="details-items printed-fabrics" [class.show]="selectedFilter === 'printed-fabrics'">
+                    <div class="item">
+                        <!-- <span class="category">COMPANY PROFILE</span> -->
+                        <h6>
+                            We manufacture custom printed fabrics as per your requirement in Wool, Silk and Viscose. 
+                            We work as per your requirements and deliver you the fabrics which are of high-quality, affordable and on-time. 
+                            <br><br>
+                            We at KKPL, have years of <strong>experience</strong> in manufacturing different types of printed 
+                            fabrics as per requirements of the customer. We can deliver you the fabrics from a simple prints to complex prints. 
+                            <strong><a routerLink="/contact">Contact us</a></strong> if you have further queries or for 
+                            a free no-obligation quote.
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="details-items custom-wool" [class.show]="selectedFilter === 'custom-wool'">
+                    <div class="item">
+                        <h6>
+                            Wool Fabrics are made from worsted yarns and have a simple or a complex <strong>woven pattern</strong>. 
+                            The wool fabrics can be used in constructing <strong>clothes or decorator</strong> items.
+                            <br><br>
+                            Wool fabrics will stand up to years of everyday family wear and tear and still bounce back. 
+                            They will maintain a clean and ‘as new’ appearance for much longer than other fiber type fabrics. 
+                            More than any other fabric on earth - wool combines more <strong>luxury and fabric performance</strong> due to its 
+                            appearance retention, tactile properties, drape, elasticity and wrinkle resistance. 
+                            It is one of the most fire resistant fabric when compared to other fabrics available today.
+                            <br><br>                            
+                            Wool fabric is used virtually everywhere. From clothing and apprels to <strong>Upholsetry</strong> and decoration. 
+                            Its ideally used in winter garments, sofas, chairs, wall hangings, etc.
+                            <br><br>
+                            We at KKPL, have years of <strong>experience</strong> in manufacturing different types of wool fabrics as per 
+                            requirements of the customer. We can deliver you the wool fabrics from a simple design to complex patterns. 
+                            <strong><a routerLink="/contact">Contact us</a></strong> if you have further queries or for a free no-obligation quote. 
+                            <br><br>                           
+                            <strong><a href="https://www.vogue.com/photovogue" target="_blank">Check out</a></strong> the collection of our 
+                            Fabrics featured by Vogue at the <strong>London Fashion Week</strong>.
+                        </h6>
+                    </div>
+                </div>
+    
+                <div class="details-items colour-chart" [class.show]="selectedFilter === 'colour-chart'">
+                    <div class="item">
+                        <h6>
+                            <section class="container my-5">
+                                <h2 class="mb-4 text-center">PMS Color Chart</h2>
+                                <div class="accordion" id="colorAccordion">
+                              
+                                  <!-- Brown Tones Group -->
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingBrown">
+                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBrown" aria-expanded="true" aria-controls="collapseBrown">
+                                        Brown Tones
+                                      </button>
+                                    </h2>
+                                    <div id="collapseBrown" class="accordion-collapse collapse show" aria-labelledby="headingBrown" data-bs-parent="#colorAccordion">
+                                      <div class="accordion-body d-flex flex-wrap gap-3">
+                                        <div class="color-swatch" style="background-color:#d18e54;">722</div>
+                                        <div class="color-swatch" style="background-color:#ba7530;">723</div>
+                                        <div class="color-swatch" style="background-color:#8e4905;">724</div>
+                                        <div class="color-swatch" style="background-color:#753802;">725</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                              
+                                  <!-- Yellow Tones Group -->
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingYellow">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseYellow" aria-expanded="false" aria-controls="collapseYellow">
+                                        Yellow Tones
+                                      </button>
+                                    </h2>
+                                    <div id="collapseYellow" class="accordion-collapse collapse" aria-labelledby="headingYellow" data-bs-parent="#colorAccordion">
+                                      <div class="accordion-body d-flex flex-wrap gap-3">
+                                        <div class="color-swatch" style="background-color:#ffed38;">803</div>
+                                        <div class="color-swatch" style="background-color:#edd3b5;">726</div>
+                                        <div class="color-swatch" style="background-color:#e2bf9b;">727</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                              
+                                  <!-- Add more tone groups here -->
+                                </div>
+                              </section>
+                              
+                        </h6>
+                    </div>
+                </div>
+
+                <div class="details-items metric-conversion" [class.show]="selectedFilter === 'metric-conversion'">
+                    <div class="item">
+                        <h6>
+                          <div class="converter-container">
+                            <div class="converter-form">
+                              <input
+                                type="number"
+                                [(ngModel)]="inputValue"
+                                placeholder="Enter value"
+                              />
+                              <select [(ngModel)]="fromUnit">
+                                <option *ngFor="let unit of units" [value]="unit">{{ unit }}</option>
+                              </select>
+                            </div>
+                            <div class="results">
+                              <h6><strong>Converted Values:</strong></h6>
+                              <ul>
+                                <li *ngFor="let item of getConvertedValues()">
+                                  {{ inputValue }} {{ fromUnit }} = <strong>{{ item.value }}</strong> {{ item.unit }}
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

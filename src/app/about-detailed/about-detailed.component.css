@@ -44,7 +44,7 @@
 .details ul.details-filter {
     list-style: none;
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 .details ul.details-filter {
     display: flex;
@@ -66,7 +66,7 @@
     display: block; /* Makes anchor tag fill the li */
     width: 100%; /* Ensures button fills the li */
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     text-transform: capitalize;
     font-weight: 500;
     color: #343a40;
@@ -90,7 +90,7 @@
 .details .item {
     background-color: #5d687314;
     border-radius: 60px;
-    padding: 30px;
+    padding: 50px;
     margin-bottom: 30px;
 }
 .details .item h6 {
