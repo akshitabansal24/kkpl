@@ -11,8 +11,10 @@
 /* Ensure toggler button is dark */
 .navbar-toggler {
     /* background-color: rgba(0, 0, 0, 0.8); Dark background */
-    filter: invert(0) brightness(0.7); /* Makes it darker */
-    border: 2px solid rgba(255, 255, 255, 0.921); /* White border for visibility */
+    filter: invert(0) brightness(0.7);
+    /* Makes it darker */
+    border: 2px solid rgba(255, 255, 255, 0.921);
+    /* White border for visibility */
     padding: 5px 10px;
     border-radius: 60px;
 }
@@ -60,4 +62,10 @@
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-  }
+}
+
+@media (max-width: 575.98px) {
+    .navbar-brand img {
+        width: 150px !important;
+    }
+}

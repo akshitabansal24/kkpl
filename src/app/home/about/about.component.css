@@ -3,14 +3,14 @@
 {
 	background-image: url('../../../assets/img/abt-img.png');
 	padding-top:100px;
-	position:relative;
+	height:auto;
 	background-size: cover;
-	height:100vh;
-	width:100vw;
-	text-align: center;
 	display: flex;
     justify-content: center; /* Centers content horizontally */
     text-align: center;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding: 100px 0px;
 }
 /* .abt-img{
 	height: 100vh;
@@ -26,11 +26,21 @@
 	word-wrap: break-word;
     overflow-wrap: break-word;
 	text-align: justify;
-  text-justify: inter-word;
+	text-justify: inter-word;
+	line-height: 1.6;
 }
 .exo-2 {
     font-family: "Exo 2", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+}
+
+a {
+	transition: all 0.3s ease;
+}
+
+a:hover{
+	transition: all 0.3s ease;
+	
 }

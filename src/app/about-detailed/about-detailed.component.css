@@ -9,6 +9,7 @@
     background-size: cover;
     padding: 100px 0px;
     text-align: center;
+    transition: all 0.3s ease;
 }
 .page-heading span {
     background-color: #fff;
@@ -20,10 +21,12 @@
     padding: 10px 25px;
     display: inline-block;
     margin-bottom: 30px;
+    transition: all 0.3s ease;
 }
 .page-heading span a {
     color: #1e1e1e;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 .page-heading span a:hover {
     color: #1e1e1e;
@@ -40,27 +43,26 @@
     font-weight: 1000;
     text-transform: uppercase;
     color: #343a40;
-}
-.details ul.details-filter {
-    list-style: none;
-    text-align: center;
-    margin-bottom: 40px;
+    transition: all 0.3s ease;
 }
 .details ul.details-filter {
     display: flex;
-    justify-content: center; /* Align buttons in center */
-    flex-wrap: wrap; /* Allow wrapping if needed */
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 0;
-    list-style: none; /* Remove bullet points */
+    list-style: none;
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
 }
 .details ul.details-filter li {
     flex: 1; /* Makes all list items equal width */
     min-width: 150px; /* Prevents items from shrinking too much */
-    max-width: 200px; /* Keeps width reasonable */
+    max-width: 250px; /* Keeps width reasonable */
     text-align: center;
     margin: 5px 8px;
     width: 100%;
     box-shadow: #343a40;
+    transition: all 0.3s ease;
 }
 .details ul.details-filter li a {
     display: block; /* Makes anchor tag fill the li */
@@ -73,35 +75,40 @@
     background-color: #fefefe;
     padding: 12px 25px;
     border-radius: 5px;
-    transition: all .3s;
+    transition: all .3s ease;
 }
 .details ul.details-filter li a.is_active {
     background-color: #343a4082;
     color: #fff;
     text-decoration: underline;
+    transition: all 0.3s ease;
 }
 .details ul.details-filter li a.is_active:hover {
     color:  #333;
+    transition: all 0.3s ease;
 }
 .details ul.details-filter li a:hover {
     color:  #262626;
     text-decoration: underline;
+    transition: all 0.3s ease;
 }
 .details .item {
     background-color: #5d687314;
     border-radius: 60px;
     padding: 50px;
     margin-bottom: 30px;
+    transition: all 0.3s ease;
 }
 .details .item h6 {
     font-size:20px;
     letter-spacing: 1px;
     word-spacing: 15px;
-    margin-top: 6px;
-    display: inline-block;
     margin-top: 30px;
+    display: inline-block;
     text-align: justify;
     text-justify: inter-word;
+    transition: all 0.3s ease;
+    line-height: 1.6;
 }
 .details .item h6 a {
     color: #000;
@@ -112,32 +119,34 @@
     display: inline-block;
     text-align: justify;
     text-justify: inter-word;
+    transition: all 0.3s ease;
+    line-height: 1.6;
 }
 .details .item h6 a:hover {
     text-decoration: underline;
+    transition: all 0.3s ease;
 }
-
-/* Hide all sections by default */
 .details-items {
     display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
-
-/* Show selected section */
 .details-items.show {
     display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
-
-/* Active button style */
 .filter-btn {
     cursor: pointer;
     padding: 10px;
     display: inline-block;
     text-decoration: none;
     color: black;
+    transition: all 0.3s ease;
 }
-
 .filter-btn.is_active {
     font-weight: bold;
     color: #000;
     text-decoration: underline;
+    transition: all 0.3s ease;
 }
