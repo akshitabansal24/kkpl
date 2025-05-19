@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { UserService } from '../../services/user.service';
+import { UserService } from '../../user.service';
 
 @Component({
   selector: 'app-products',
@@ -9,9 +9,9 @@ import { UserService } from '../../services/user.service';
   styleUrl: './products.component.css'
 })
 export class ProductsComponent {
-  // constructor(private userService: UserService) {}
+  constructor(private userService: UserService) {}
 
   ngOnInit(): void {
-    // this.userService.getUsers().subscribe((data) => console.log(data));
+    this.userService.getUsers().subscribe((data) => console.log(data));
   }
 }
