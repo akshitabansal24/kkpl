@@ -1,0 +1,148 @@
+#mis{
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+.page-heading {
+    background-image: url(../../assets/img/mis_2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.page-heading span {
+    background-color: #fff;
+    border-radius: 60px;
+    color: #494949;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+.page-heading span a {
+    color: #1e1e1e;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.page-heading span a:hover {
+    color: #1e1e1e;
+    text-decoration: underline;
+}
+.exo-2 {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.page-heading h3 {
+    font-size: 48px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    color: #343a40;
+    transition: all 0.3s ease;
+}
+.details ul.details-filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+}
+.details ul.details-filter li {
+    flex: 1; /* Makes all list items equal width */
+    min-width: 150px; /* Prevents items from shrinking too much */
+    max-width: 250px; /* Keeps width reasonable */
+    text-align: center;
+    margin: 5px 8px;
+    width: 100%;
+    box-shadow: #343a40;
+    transition: all 0.3s ease;
+}
+.details ul.details-filter li a {
+    display: block; /* Makes anchor tag fill the li */
+    width: 100%; /* Ensures button fills the li */
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #343a40;
+    background-color: #fefefe;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+.details ul.details-filter li a.is_active {
+    background-color: #343a4082;
+    color: #fff;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+.details ul.details-filter li a.is_active:hover {
+    color:  #333;
+    transition: all 0.3s ease;
+}
+.details ul.details-filter li a:hover {
+    color:  #262626;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+.details .item {
+    background-color: #5d687314;
+    border-radius: 60px;
+    padding: 50px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+.details .item h6 {
+    font-size:20px;
+    letter-spacing: 1px;
+    word-spacing: 15px;
+    margin-top: 30px;
+    display: inline-block;
+    text-align: justify;
+    text-justify: inter-word;
+    transition: all 0.3s ease;
+    line-height: 1.6;
+}
+.details .item h6 a {
+    color: #000;
+    text-decoration: none;
+    font-size:20px;
+    letter-spacing: 1px;
+    word-spacing: 15px;
+    display: inline-block;
+    text-align: justify;
+    text-justify: inter-word;
+    transition: all 0.3s ease;
+    line-height: 1.6;
+}
+.details .item h6 a:hover {
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+.details-items {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.filter-btn {
+    cursor: pointer;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+}
+.filter-btn.is_active {
+    font-weight: bold;
+    color: #000;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}

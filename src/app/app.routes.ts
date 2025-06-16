@@ -8,6 +8,7 @@ import { FabricsComponent } from './product-detailed/fabrics/fabrics.component';
 import { FlameProofComponent } from './product-detailed/flame-proof/flame-proof.component';
 import { HandloomsComponent } from './product-detailed/handlooms/handlooms.component';
 import { StolesComponent } from './product-detailed/stoles/stoles.component';
+import { MisComponent } from './mis/mis.component';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent },
@@ -19,6 +20,7 @@ export const routes: Routes = [
     {path: 'flame-proof', component: FlameProofComponent},
     {path: 'handlooms', component: HandloomsComponent},
     {path: 'stoles', component: StolesComponent},
+    {path: 'mis', component: MisComponent},
 ];
 
 @NgModule({

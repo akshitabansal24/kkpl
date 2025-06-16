@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from "../navbar/navbar.component";
-import { AboutComponent } from "../home/about/about.component";
 import { RouterLink } from '@angular/router';
 
 @Component({

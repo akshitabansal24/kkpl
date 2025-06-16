@@ -1,0 +1,36 @@
+<!-- <app-navbar></app-navbar> -->
+<section id="mis" class="exo-2">
+  <div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <span class="breadcrumb"><a routerLink="/home">Home</a> / MIS</span>
+          <h3 class="mt-4">MIS</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section details pt-5">
+    <div class="container">
+      <ul class="details-filter block">
+        <li *ngFor="let b of buttons; index as i" class="filter-btn">
+          <a [ngClass]="{ 'is_active': b.isActive }" (click)="updateGrid(b.queryReport)">{{ b.headerName }}</a>
+        </li>
+      </ul>
+      <div *ngIf="rowData" class="content row details-box">
+        <!-- The AG Grid component, with Dimensions, CSS Theme, Row Data, and Column Definition -->
+        <ag-grid-angular
+          style="width: 100%; height: 500px;"
+          [rowData]="rowData"
+          [columnDefs]="colDefs"
+          [enableCharts]="true"
+          [cellSelection]="true"
+          (cellEditingStopped)="onCellEditingStopped($event)"
+          [pagination]="true"
+          [paginationPageSize]="9"
+        />
+      </div>
+    </div>
+  </div>
+</section>
