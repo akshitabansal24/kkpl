@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 export interface User {
@@ -13,6 +13,16 @@ export interface User {
 export class HttpService {
   private apiUrl = 'http://localhost:8080/';
 
+  authorizationData = 'Basic ' + btoa('username' + ':' + 'password');
+
+  headerOptions = {
+      headers: new HttpHeaders({
+          'Content-Type':  'application/json',
+          'Authorization': this.authorizationData,
+          'responseType': 'json'
+      })
+  };
+
   constructor(private http: HttpClient) {}
 
   getReports(): Observable<any> {
@@ -20,10 +30,10 @@ export class HttpService {
   }
 
   getReportData(reportRequest: any): Observable<any> {
-    return this.http.post(this.apiUrl + 'reportData', reportRequest, { responseType: 'json' });
+    return this.http.post(this.apiUrl + 'reportData', reportRequest);
   }
 
   updateReport(reportRequest: any): Observable<any> {
-    return this.http.post(this.apiUrl + 'updateReportData', reportRequest, { responseType: 'json' });
+    return this.http.post(this.apiUrl + 'updateReportData', reportRequest, this.headerOptions);
   }
 }
